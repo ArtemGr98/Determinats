@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Determinant of a matrix</title>
+  <style>
+    input {
+      width:50px;
+      }
+  </style>
+  <script src="determinants.js"></script>
+</head>
+<body>
+  <div>
+    <p><b>Calculating the determinant of a matrix</b></p>
+    <p>Choose your option</p>
+    <select id="selectOption" onchange="changeSelectOption()">
+      <option value="4">2x2</option>
+      <option value="9">3x3</option>
+      <option value="16">4x4</option>
+      <option value="25">5x5</option>
+    </select>
+  </div>
+  <div id="parent">
+    <input id="a0">
+    <input id="a1">
+    <br>
+    <input id="a2">
+    <input id="a3">
+  </div>
+  <br>
+  <br>
+  <button onclick="calculation()">Result</button>
+  <button onclick="changeSelectOption()">Cleaning</button>
+  <hr>
+  <p id="result">Result</p>
+</body>
+</html>
